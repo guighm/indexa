@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/indexa",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -91,7 +91,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://guighm.github.io/indexa/",
+            "name": "Guilherme Moraes",
+            "email": "guighm@outlook.com.br"
+          }
         }
       }
     }
